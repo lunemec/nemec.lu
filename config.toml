@@ -1,0 +1,26 @@
+baseURL = "https://nemec.lu"
+languageCode = "en-us"
+title = "Lulu rants"
+theme = "hucore"
+googleAnalytics = "UA-42667966-1"
+
+[params]
+description = "Rants, opinions, and things I find worthwhile writing about."
+keywords = ["nemec.lu", "Lukas Nemec", "keyword 3"]
+author = "Lukas Nemec"
+sharingicons = true
+
+[params.highlight]
+style = "github"
+
+[[params.social]]
+url = "http://github.com/lunemec/"
+fa_icon = "fa-github"
+
+[[params.social]]
+url = "https://twitter.com/LukasNemec1"
+fa_icon = "fa-twitter"
+
+[[params.social]]
+url = "/index.xml"
+fa_icon = "fa-rss"
