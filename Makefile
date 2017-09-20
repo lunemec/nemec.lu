@@ -7,7 +7,7 @@ all:
 	@printf $(format) "draft" "Build drafts."
 	@printf $(format) "watch" "Watch filesystem for changes."
 	@printf $(header) "Server"
-	@printf $(format) "server" "Run hugo dev server."
+	@printf $(format) "run" "Run hugo dev server."
 
 build:
 	hugo
@@ -18,5 +18,5 @@ draft:
 watch:
 	hugo -D -w
 
-server:
+run:
 	hugo server -D
