@@ -1,7 +1,7 @@
 ---
 title: "Fail Fast"
 date: 2018-01-23T20:33:22+01:00
-draft: true
+draft: false
 ---
 Do you remember all the posts about new businesses (read startups) need to [fail fast](https://en.wikipedia.org/wiki/Fail-fast#Business) (Business section)? Release first version
 as soon as possible to make them competitive? (insert peperidge farm meme here, haha)
