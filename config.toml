@@ -22,3 +22,4 @@ homeTitle = "Lulu rants"
 [params.social]
 github = "lunemec"
 twitter = "LukasNemec1"
+rss = "index.xml"
