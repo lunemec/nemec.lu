@@ -1,26 +1,24 @@
 baseURL = "https://nemec.lu"
 languageCode = "en-us"
 title = "Lulu rants"
-theme = "hucore"
+theme = "kiss"
+copyright = ""
+disqusShortname = ""
+Paginate = 10
+enableRobotsTXT = true
 googleAnalytics = "UA-42667966-1"
 
-[params]
-description = "Rants, opinions, and things I find worthwhile writing about."
-keywords = ["nemec.lu", "Lukas Nemec", "keyword 3"]
-author = "Lukas Nemec"
-sharingicons = true
+[params.rss] # Adding this tag enables RSS feed
+includeContent = true # Includes whole content in rss
+authorName = "Lukas Nemec" # Author full name
+authorEmail = "lu.nemec@gmail.com" # Author email
 
-[params.highlight]
-style = "github"
+[params.info]
+enableSocial = true
+poweredby = true
+related = true
+homeTitle = "Lulu rants"
 
-[[params.social]]
-url = "http://github.com/lunemec/"
-fa_icon = "fa-github"
-
-[[params.social]]
-url = "https://twitter.com/LukasNemec1"
-fa_icon = "fa-twitter"
-
-[[params.social]]
-url = "/index.xml"
-fa_icon = "fa-rss"
+[params.social]
+github = "lunemec"
+twitter = "LukasNemec1"
