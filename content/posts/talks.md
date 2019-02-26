@@ -24,6 +24,11 @@ Talk explaining how to write Lisp interpreter in 4 lines of Lisp, very cool,
 kinda mind bending talk.
 {{<youtube OyfBQmvr2Hc>}}
 
+#### Break Me00 The MoVfuscator Turning mov into a soul crushing RE nightmare Christopher Domas
+Presentation *mov* instruction being Turing complete whith example programs
+compiled into only *mov* instructions.
+{{<youtube R7EEoWg6Ekk>}}
+
 ## Golang
 #### Golang UK Conference 2016 - Dave Cheney - SOLID Go Design
 {{<youtube zzAdEt3xZ1M>}}
