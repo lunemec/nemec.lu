@@ -13,8 +13,23 @@ Very interesting talk about leveraging code generation to provide consistent
 APIs and code across all engineering teams in a company.
 {{<youtube j6ow-UemzBc>}}
 
+#### Kill "Microservices" before its too late
+Great talk about architecture of microservices and the system. Leveraging
+multiple languages and similar.
+{{<youtube -UKEPd2ipEk>}}
+
+#### Performance Matters
+Awesome talk about how to measure program performance correctly and
+about using "causal profiling" to enable developers to see what
+parts of program are worth to be optimized.
+{{<youtube r-TLSBdHe1A>}}
+
 #### A Crystal Ball to Prioritize Technical Debt
 {{<youtube SdUewLCHWvU>}}
+
+#### A Tale of Two Asyncs: Open Source Language Design in Rust and Node.js
+A talk about Node.js and Rust async solutions.
+{{<youtube aGJTXdXQN2o>}}
 
 #### DEFCON 17: That Awesome Time I Was Sued For Two Billion Dollars
 {{<youtube KSWqx8goqSY>}}
@@ -24,7 +39,7 @@ Talk explaining how to write Lisp interpreter in 4 lines of Lisp, very cool,
 kinda mind bending talk.
 {{<youtube OyfBQmvr2Hc>}}
 
-#### Break Me00 The MoVfuscator Turning mov into a soul crushing RE nightmare Christopher Domas
+#### Break Me00 The MoVfuscator Turning mov into a soul crushing RE nightmare
 Presentation *mov* instruction being Turing complete whith example programs
 compiled into only *mov* instructions.
 {{<youtube R7EEoWg6Ekk>}}
