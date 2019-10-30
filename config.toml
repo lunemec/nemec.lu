@@ -8,6 +8,9 @@ Paginate = 10
 enableRobotsTXT = true
 googleAnalytics = "UA-42667966-1"
 
+[taxonomies]
+tag ="tags"
+
 [params.rss] # Adding this tag enables RSS feed
 includeContent = true # Includes whole content in rss
 authorName = "Lukas Nemec" # Author full name

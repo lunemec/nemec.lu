@@ -2,6 +2,7 @@
 title: "State of software in 2018"
 date: 2018-02-13T22:37:00+01:00
 draft: false
+tags: [software]
 ---
 It is now year 2018.
 

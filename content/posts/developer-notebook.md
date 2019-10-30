@@ -2,6 +2,7 @@
 title: "Developer Notebook"
 date: 2017-08-18T13:14:59+02:00
 draft: false
+tags: [tech, software]
 ---
 First, a little bit of background. I'm a software developer. I use PC's all day. 
 I've been programming on Windows, Linux and MacOS devices. At first, I thought 
