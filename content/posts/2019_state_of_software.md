@@ -1,6 +1,6 @@
 ---
-title: "State of software in 2018"
-date: 2019-10-30T10:52:15+01:00
+title: "State of software in 2019"
+date: 2019-11-04T09:00:15+01:00
 draft: false
 tags: [software]
 ---
