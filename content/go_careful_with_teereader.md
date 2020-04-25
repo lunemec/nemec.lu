@@ -1,8 +1,8 @@
 ---
 title: "Careful with io.TeeReader and json.Decoder"
-date: 2020-04-25T11:00:20+01:00
+date: 2020-04-25T10:00:20+01:00
 draft: false
-tags: [software, go]
+tags: [software,go]
 ---
 Some time ago, I was investigating very strange bug in our codebase:
 ```
@@ -15,15 +15,15 @@ My suspicion was on gzip middleware, which is often the cause when you forget to
 set `request.ContentLength` after compressing the payload. However it turns out it was not the case.
 
 Do you see anything problematic here?
-```go
-    buf := bytes.NewBuffer(make([]byte, 0)) 
-    reader := io.TeeReader(r.Body, buf)
-    query, err := json.NewDecoder(reader).Decode(&out)
-    if err != nil {
-        // omited
-    }
-    r.Body.Close()
-    r.Body = ioutil.NopCloser(buf)
+```
+buf := bytes.NewBuffer(make([]byte, 0)) 
+reader := io.TeeReader(r.Body, buf)
+query, err := json.NewDecoder(reader).Decode(&out)
+if err != nil {
+    // omited
+}
+r.Body.Close()
+r.Body = ioutil.NopCloser(buf)
 ```
 
 From the title of this post you can guess that indeed this is the problem. However it is not
@@ -49,9 +49,8 @@ So if I take the 1st playground example, and add a `/n` at the end of the JSON, 
 So it seems like we can't use `json.Decoder` together with `io.TeeReader` to duplicate request body.
 
 I was thinking of creating a bug report, but the documentation of TeeReader states this correctly:
-```
-TeeReader returns a Reader that writes to w what it reads from r. All reads from r performed through it are matched with corresponding writes to w. There is no internal buffering - the write must complete before the read completes. Any error encountered while writing is reported as a read error. 
-```
+
+> TeeReader returns a Reader that writes to w what it reads from r. All reads from r performed through it are matched with corresponding writes to w. There is no internal buffering - the write must complete before the read completes. Any error encountered while writing is reported as a read error. 
 
 So if you don't read all bytes from `r`, not all bytes will be written to `w`. Simple.
 
