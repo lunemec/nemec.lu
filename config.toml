@@ -1,20 +1,43 @@
 baseURL = "https://nemec.lu"
 languageCode = "en-us"
-title = "Lulu rants"
-theme = "kiss"
+title = "Lukas rants"
+theme = "typo"
 copyright = ""
 disqusShortname = ""
 Paginate = 10
 enableRobotsTXT = true
-googleAnalytics = "UA-42667966-1"
+
+[params]
+# Appearance
+theme = 'auto'
+
+# Intro on main page, content in markdown, if you omit title or content the other can be displayed
+homeIntroContent = """
+Hello, my name is Lukáš Němec, I'm a father, husband, software engineer, tinkerer and a nerd.
+
+Sometimes I have something interesting to say, which you may find here. Sometimes its not so interesting,
+but you will find that here too. 
+
+Apart from interesting technical details I ran into, few things of note
+are:
+- [Some of my GitHub projects](projects/)
+- [Curated list of interesting talks](tags/talks)
+"""
+
+# Collection to display on home page: 
+# in this case we would display content/posts pages
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+
+# Pagination size across all website, this is the same for homepage and single list page
+paginationSize = 10
+# Display summaries under post list entries
+listSummaries = true
+# List entries date format
+listDateFormat = '2 Jan 2006'
 
 [taxonomies]
-tag ="tags"
-
-[params.rss] # Adding this tag enables RSS feed
-includeContent = true # Includes whole content in rss
-authorName = "Lukas Nemec" # Author full name
-authorEmail = "lu.nemec@gmail.com" # Author email
+tag = "tags"
 
 [params.info]
 enableSocial = true
@@ -22,7 +45,30 @@ poweredby = true
 related = true
 homeTitle = "Lulu rants"
 
-[params.social]
-github = "lunemec"
-twitter = "LukasNemec1"
-rss = "index.xml"
+[[params.social]]
+name = "github"
+url = "https://github.com/lunemec"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/luk%C3%A1%C5%A1-n%C4%9Bmec-576a4a5b/s"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "projects"
+url = "/projects"
+
+# Syntax highlight on code blocks, all styles: 
+# https://xyproto.github.io/splash/docs/all.html
+# I suggest algol
+[markup]
+[markup.highlight]
+style = 'onedark'

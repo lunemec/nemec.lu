@@ -5,18 +5,18 @@ draft: false
 tags: [tech, software]
 ---
 
-[A lot](1) [has been said](2) [about passwords](3) [being bane](4) [of our society](5). [And it is true](6). However, with some not-so-hard setup of software, it can be made bearable.
+[A lot][1] [has been said][2] [about passwords][3] [being bane][4] [of our society][5]. [And it is true][6]. However, with some not-so-hard setup of software, it can be made bearable.
 
-The setup starts with [**KeePass2*](keepass) password safe. This is a program that allows you
+The setup starts with [**KeePass2*][keepass] password safe. This is a program that allows you
 to store arbitrary data, but also specifically usernames, passwords and URLs that can be matched to find your saved password.
 
 It can also generate safe random passwords, set expiration, and a lot more. Oh, and it is
-multiplatform - it works on GNU Linux, and there is MacOS program ([MacPass](macpass)) that is compatible
+multiplatform - it works on GNU Linux, and there is MacOS program ([MacPass][macpass]) that is compatible
 with the keepass database.
 
 Then comes the second part - connecting this password database with your browser. Depending on your browser, there are plugins. I use *KeePassHttp-Connector* for Firefox. Chrome has same plugin, just named differently.
 
-Then you also need the plugin within the [*KeePass* itself](keepasshttp) (or the MacPass - MacPassHttp).
+Then you also need the plugin within the [*KeePass* itself][keepasshttp] (or the MacPass - MacPassHttp).
 
 Now, you create password database, that is encrypted with a private key and a password. Singular master password that unlocks all your other passwords. Needless to say - this password must be very strong, and not used anywhere else - to avoid leaking it from some unsecure webapp.
 
