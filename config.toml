@@ -4,7 +4,8 @@ title = "Lukas rants"
 theme = "typo"
 copyright = ""
 disqusShortname = ""
-Paginate = 10
+pagination.pagerSize = 5
+summaryLength = 70
 enableRobotsTXT = true
 
 [params]
@@ -30,7 +31,7 @@ homeCollectionTitle = 'Posts'
 homeCollection = 'posts'
 
 # Pagination size across all website, this is the same for homepage and single list page
-paginationSize = 10
+paginationSize = 5
 # Display summaries under post list entries
 listSummaries = true
 # List entries date format

@@ -12,6 +12,9 @@ all:
 build:
 	hugo
 
+docker:
+	docker build --platform="linux/amd64" . -t lunemec/nemec.lu:latest
+
 draft:
 	hugo -D
 
@@ -20,3 +23,6 @@ watch:
 
 run:
 	hugo server -D
+
+run_docker: docker
+	docker run -it --rm=true -p 8080:80 lunemec/nemec.lu:latest

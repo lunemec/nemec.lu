@@ -1,0 +1,13 @@
+:80 {
+    root * /usr/share/caddy
+
+    # Allow the downstream Caddy to handle the logic
+    file_server
+
+    encode zstd gzip
+
+    @static {
+        path *.ico *.css *.js *.gif *.jpg *.jpeg *.png *.svg *.woff *.woff2 *.webp
+    }
+    header @static Cache-Control "public, max-age=2592000"
+}
